@@ -75,6 +75,22 @@
                                     <action selector="mustache:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QCn-CM-XVt"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20s-lh-rsS" customClass="SpringButton" customModule="Spring">
+                                <rect key="frame" x="178" y="560" width="32" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="AzL-xe-htY"/>
+                                    <constraint firstAttribute="width" constant="32" id="BE9-Sc-bJP"/>
+                                </constraints>
+                                <state key="normal" title="Hat"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="BE9-Sc-bJP"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="hat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LcJ-Dc-OpE"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bo-68-2aT" customClass="SpringButton" customModule="Spring">
                                 <rect key="frame" x="382" y="550" width="218" height="50"/>
                                 <color key="backgroundColor" red="0.47843137254901963" green="0.8784313725490196" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
@@ -106,22 +122,6 @@
                                 </variation>
                                 <connections>
                                     <action selector="getPhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gg9-Gl-T5J"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20s-lh-rsS" customClass="SpringButton" customModule="Spring">
-                                <rect key="frame" x="178" y="560" width="32" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="32" id="AzL-xe-htY"/>
-                                    <constraint firstAttribute="width" constant="32" id="BE9-Sc-bJP"/>
-                                </constraints>
-                                <state key="normal" title="Hat"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="BE9-Sc-bJP"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="hat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LcJ-Dc-OpE"/>
                                 </connections>
                             </button>
                         </subviews>

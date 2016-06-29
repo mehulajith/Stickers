@@ -24,8 +24,17 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
-    }
+        
+//        let animatedImageView: UIImageView = UIImageView(frame: self.view.bounds)
+//        
+//        
+//        animatedImageView.animationImages = [UIImage(named: "image1.gif")!, UIImage(named: "image2.gif")!, UIImage(named: "image3.gif")!, UIImage(named: "image4.gif")!]
+//        animatedImageView.animationDuration = 1.0
+//        animatedImageView.animationRepeatCount = 0
+//        animatedImageView.startAnimating()
+//        self.view!.addSubview(animatedImageView)
+//
+ }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -133,7 +142,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 //            hatImageView!.frame = CGRect(x: screenWidth/2, y: screenHeight/2, width: mustacheImage.size.width/2, height: mustacheImage.size.height/2)
 //            self.view.addSubview(hatImageView!)
         
+
+    
     }
+    
+    
     
 
     
