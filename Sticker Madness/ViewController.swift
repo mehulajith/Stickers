@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import Spring
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIGestureRecognizerDelegate {
 
-    @IBOutlet var imageView: UIImageView!
+    @IBOutlet var imageView: SpringImageView!
     
     //MARK: Vars
     var imagePickerController: UIImagePickerController?
@@ -23,8 +24,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    
-
 
     }
 
@@ -76,77 +75,67 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         print ("got Image!")
     }
     
-    var glassesCode = 1
+//    STICKERS!!
     
     @IBAction func glasses(sender: UIButton) {
+            
+            let glassesStik = Stickers(image:UIImage(named: "eyeglasses1"))
+            self.view.addSubview(glassesStik)
         
-        glassesImageView?.image = nil
-        
-        glassesCode = glassesCode * -1
-        
-        if glassesCode == -1 {
-        
-        let screenSize: CGRect = UIScreen.mainScreen().bounds
-        
-        let screenWidth = screenSize.width / 2
-        let screenHeight = screenSize.height / 2
-        
-        let mustacheImage : UIImage = UIImage(named:"eyeglasses1")!
-        glassesImageView = UIImageView(image: mustacheImage)
-        glassesImageView!.image = mustacheImage
-        glassesImageView!.frame = CGRect(x: screenWidth/2, y: screenHeight/2, width: mustacheImage.size.width/2, height: mustacheImage.size.height/2)
-        self.view.addSubview(glassesImageView!)
-    }
+//        let screenSize: CGRect = UIScreen.mainScreen().bounds
+//        
+//        let screenWidth = screenSize.width / 2
+//        let screenHeight = screenSize.height / 2
+//        
+//        let mustacheImage : UIImage = UIImage(named:"eyeglasses1")!
+//        glassesImageView = UIImageView(image: mustacheImage)
+//        glassesImageView!.image = mustacheImage
+//        glassesImageView!.frame = CGRect(x: screenWidth/2, y: screenHeight/2, width: mustacheImage.size.width/2, height: mustacheImage.size.height/2)
+//        self.view.addSubview(glassesImageView!)
         
     }
-    
-    var mustacheCode = 1
     
     @IBAction func mustache(sender: UIButton) {
+            
+            let mustacheStik = Stickers(image:UIImage(named: "mustache3"))
+            self.view.addSubview(mustacheStik)
         
-        mustacheImageView?.image = nil
-        
-        mustacheCode = mustacheCode * -1
-        
-        if mustacheCode == -1 {
-        
-        let screenSize: CGRect = UIScreen.mainScreen().bounds
-        
-        let screenWidth = screenSize.width / 2
-        let screenHeight = screenSize.height / 2
-        
-        let mustacheImage : UIImage = UIImage(named:"Mustache1")!
-        mustacheImageView = UIImageView(image: mustacheImage)
-        mustacheImageView!.image = mustacheImage
-        mustacheImageView!.frame = CGRect(x: screenWidth/2, y: screenHeight/2, width: mustacheImage.size.width/2, height: mustacheImage.size.height/2)
-        self.view.addSubview(mustacheImageView!)
+//        let screenSize: CGRect = UIScreen.mainScreen().bounds
+//        
+//        let screenWidth = screenSize.width / 2
+//        let screenHeight = screenSize.height / 2
+//        
+//        let mustacheImage : UIImage = UIImage(named:"Mustache1")!
+//        mustacheImageView = UIImageView(image: mustacheImage)
+//        mustacheImageView!.image = mustacheImage
+//        mustacheImageView!.frame = CGRect(x: screenWidth/2, y: screenHeight/2, width: mustacheImage.size.width/2, height: mustacheImage.size.height/2)
+//        self.view.addSubview(mustacheImageView!)
      
-        }
     }
-    
-    var hatCode = 1
     
     @IBAction func hat(sender: UIButton) {
         
-        hatImageView?.image = nil
-
-        hatCode = hatCode * -1
-        
-        if hatCode == -1 {
-        
-            let screenSize: CGRect = UIScreen.mainScreen().bounds
+//        hatImageView?.image = nil
             
-            let screenWidth = screenSize.width / 2
-            let screenHeight = screenSize.height / 2
+            let hatStik = Stickers(image:UIImage(named: "hat1"))
+            self.view.addSubview(hatStik)
             
-            let mustacheImage : UIImage = UIImage(named:"hat1")!
-            hatImageView = UIImageView(image: mustacheImage)
-            hatImageView!.image = mustacheImage
-            hatImageView!.frame = CGRect(x: screenWidth/2, y: screenHeight/2, width: mustacheImage.size.width/2, height: mustacheImage.size.height/2)
-            self.view.addSubview(hatImageView!)
+            
         
-        }
+//            let screenSize: CGRect = UIScreen.mainScreen().bounds
+//            
+//            let screenWidth = screenSize.width / 2
+//            let screenHeight = screenSize.height / 2
+//            
+//            let mustacheImage : UIImage = UIImage(named:"hat1")!
+//            hatImageView = UIImageView(image: mustacheImage)
+//            hatImageView!.image = mustacheImage
+//            hatImageView!.frame = CGRect(x: screenWidth/2, y: screenHeight/2, width: mustacheImage.size.width/2, height: mustacheImage.size.height/2)
+//            self.view.addSubview(hatImageView!)
+        
     }
+    
+
     
     
     
